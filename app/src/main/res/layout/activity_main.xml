@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Menu Inventory System"/>
+
+    <LinearLayout
+        android:id="@+id/MenuBarang"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="14dp"
+        android:layout_below="@id/txtMenu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/ic_folder_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:text="Barang"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MenuBahanBaku"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/MenuBarang"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="14dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_kitchen_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:text="Bahan Baku"/>
+    </LinearLayout>
+</RelativeLayout>
